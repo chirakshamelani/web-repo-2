@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+  <title>MR FOOD RESTURANT</title> 
+  <!-- css -->
+  <link rel="stylesheet" href="pro.css">
+</head>
+<body id="home" onload="myFunction()">
+    <!-- jS -->
+    <script src="javaproject.js">
+   
+    </script>
+    <!-- Navbar -->
+  <nav  id="navbar" class="bg-dark">
+      <div class="logo">
+        <img src="oie_transparent.png"alt="our logo">
+      </div>
+
+      <ul> 
+         <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="chefs.html">chefs</a></li>
+        <li><a href="menu.html">Menus</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </nav>
+    
+<section id="contact">
+    <div class="Reserve bg-primary p-1">
+      <h3 class="m-heading py-1">Reserve your table</h3>
+
+      <form id="form1" action="pizzamaster.php" method="post">
+        <div class="form-group">
+          <input id="input1" type="text" name="name" placeholder="Name">
+          <input type="email" name="email" placeholder="email">
+            </div>
+        <div class="DTM">
+        
+        <label for="date"></label>
+        <input type="date"  name="date">
+        <input type="time"  name="time" min="09:00" max="18:00" required>
+            
+        <select name="Number of people"> 
+            <option value="2" selected="selected">2 People</option>
+            <option value="3">3 People</option>
+            <option value="4">4 People</option>
+            <option value="5">5 People</option>
+            <option value="6">6 People</option>
+            <option value="7">7 People</option>
+            <option value="8">8 People</option>
+            <option value="9">9 People</option>
+            <option value="10">10 People</option>
+            </select>
+            </div>
+          <div class="form-group2">
+          <input type="text" name="Phone number" placeholder="Phone number">
+          <textarea name="any comment" placeholder="any comment" cols="10" rows="7"></textarea>
+        </div>
+          <input class="btn btn-dark" type="submit" name="btn" value="Submit">
+        </form>
+        </div>
+    <div class="Delivery bg-primary p-1">
+      <h3 class="m-heading py-1">Delivery</h3>
+
+      <form action="pizzamaster1.php" method="post">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Name">
+          <input type="Phone number" name="Phone number" placeholder="Phone number">
+            </div>
+        
+        <div class="form-group2">
+          <textarea name="your_order" placeholder="your order" cols="10" rows="9"></textarea>
+          <textarea name="any comment" placeholder="any comment" cols="10" rows="9"></textarea>
+            </div>
+          <textarea name="address" placeholder="your address" cols="10" rows="10"></textarea>
+          <input class="btn btn-dark" type="submit" name="btn" value="Submit">
+        </form>
+    </div>
+    </section>
+    
+    <img src="map.png" height="450" width="1350" >
+    
+    <!-- Footer -->
+  <footer class="text-center py-1 bg-dark">
+    <p>Copyright &copy; 2024, The RESTURANT, All Rights Reserved</p>
+  </footer>
+        </body>
+</html>
